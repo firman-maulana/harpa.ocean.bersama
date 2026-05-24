@@ -56,8 +56,8 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 50px 40px 50px 40px;
-	background-image: url(../images/homepage-1/bg/fid-bg-pattern.png);
-    background-position: bottom left;
+	background-image: url(../images/homepage-1/bg/fid-bg-pattern.svg);
+    background-position: top right;
     background-repeat: no-repeat;
 	border-radius: 20px;
 	height: 100%;
