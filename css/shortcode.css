@@ -1595,11 +1595,6 @@
 	height: 360px;
 }
 .pbmit-service-style-3 .pbmit-service-description p{
-	display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
     text-transform: capitalize;
 }
 .pbmit-service-style-3 .pbmit-service-description{

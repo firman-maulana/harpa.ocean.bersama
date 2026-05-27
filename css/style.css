@@ -82,7 +82,6 @@ body {
     content: "";
     display: block;
     z-index: 1;
-	background-image: url(../images/homepage-1/bg/service-bg-truck.png);
     background-position: top right;
     background-repeat: no-repeat;
 	opacity: .8;
