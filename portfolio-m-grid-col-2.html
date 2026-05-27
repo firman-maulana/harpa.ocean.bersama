@@ -37,6 +37,34 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Responsive CSS -->
 	<link rel="stylesheet" href="css/responsive.css">
+	<style>
+		.pbmit-static-btn .pbmit-btn { width: 100%; text-align: center; }
+		.pbmit-static-btn .pbmit-button-text::before { display: none !important; }
+		.pbmit-static-btn .custom-btn-icon {
+			position: absolute;
+			right: 5px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 52px;
+			height: 52px;
+			background-color: var(--pbmit-global-color);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: all .3s ease-in-out;
+		}
+		.pbmit-static-btn .custom-btn-icon svg path {
+			stroke: var(--pbmit-white-color);
+			transition: all .3s ease-in-out;
+		}
+		.pbmit-static-btn .pbmit-btn:hover .custom-btn-icon {
+			background-color: var(--pbmit-white-color);
+		}
+		.pbmit-static-btn .pbmit-btn:hover .custom-btn-icon svg path {
+			stroke: var(--pbmit-blackish-color);
+		}
+	</style>
 </head>
 
 <body>
@@ -338,8 +366,18 @@
 										<div class="pbmit-service-description">
 											<p>GT. 678 T - Capacity of 1100 KL</p>
 										</div>
-										<div class="pbmit-service-icon">
-											<svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="_x30_1_x2C__package_x2C__Box_x2C__delivery_x2C__return_x2C__shipment"><g id="XMLID_186_"><path id="XMLID_187_" d="m214.187 139.087h83.622v70.413h-83.622z"></path><path id="XMLID_206_" d="m218.666 44.516h-115.871l-53.655 84.571h155.727z"></path><path id="XMLID_256_" d="m296.997 129.087-13.799-84.571h-54.4l-13.799 84.571z"></path><path id="XMLID_257_" d="m462.86 129.087-53.655-84.571h-115.875l13.799 84.571z"></path><path id="XMLID_265_" d="m307.809 139.087v75.413c0 2.761-2.239 5-5 5h-93.622c-2.761 0-5-2.239-5-5v-75.413h-159.141v328.397h421.907v-328.397zm-224.809 303.412c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm25.5 0c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm248.024-84.261c0 36.44-34.906 66.087-77.812 66.087h-92.746c-2.761 0-5-2.238-5-5s2.239-5 5-5h92.746c37.392 0 67.812-25.16 67.812-56.087v-1.424c0-30.926-30.42-56.086-67.812-56.086h-76.258l52.023 34.752c2.296 1.533 2.914 4.639 1.38 6.935-1.524 2.28-4.623 2.925-6.935 1.38-.17-.113-65.842-43.983-65.734-43.911-2.587-1.741-2.971-5.396-.808-7.629.619-.639-3.654 2.299 66.543-44.594 2.296-1.534 5.401-.916 6.935 1.38s.916 5.401-1.38 6.935l-52.026 34.752h76.261c42.905 0 77.812 29.646 77.812 66.086v1.424z"></path></g></g></svg>
+										<div class="pbmit-static-btn">
+											<a class="pbmit-btn pbmit-btn-outline w-100" href="about-us.html">
+												<span class="pbmit-button-content-wrapper">
+													<span class="pbmit-button-text">Download Ship Particulars</span>
+													<span class="custom-btn-icon">
+														<svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M21.25 9.25391C23.9687 9.26891 25.4413 9.39016 26.4013 10.3502C27.5 11.4489 27.5 13.2164 27.5 16.7514V18.0014C27.5 21.5377 27.5 23.3052 26.4013 24.4039C25.3038 25.5014 23.535 25.5014 20 25.5014H10C6.465 25.5014 4.69625 25.5014 3.59875 24.4039C2.5 23.3039 2.5 21.5377 2.5 18.0014V16.7514C2.5 13.2164 2.5 11.4489 3.59875 10.3502C4.55875 9.39016 6.03125 9.26891 8.75 9.25391" stroke-width="2" stroke-linecap="round"/>
+															<path d="M15 4V18.25M18.75 13.875L15 18.25L11.25 13.875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													</span>
+												</span>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -369,8 +407,18 @@
 										<div class="pbmit-service-description">
 											<p>GT. 722 T - Capacity of 1300 KL</p>
 										</div>
-										<div class="pbmit-service-icon">
-											<svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="_x30_1_x2C__package_x2C__Box_x2C__delivery_x2C__return_x2C__shipment1"><g id="XMLID_186_1"><path id="XMLID_187_1" d="m214.187 139.087h83.622v70.413h-83.622z"></path><path id="XMLID_206_1" d="m218.666 44.516h-115.871l-53.655 84.571h155.727z"></path><path id="XMLID_256_1" d="m296.997 129.087-13.799-84.571h-54.4l-13.799 84.571z"></path><path id="XMLID_257_1" d="m462.86 129.087-53.655-84.571h-115.875l13.799 84.571z"></path><path id="XMLID_265_1" d="m307.809 139.087v75.413c0 2.761-2.239 5-5 5h-93.622c-2.761 0-5-2.239-5-5v-75.413h-159.141v328.397h421.907v-328.397zm-224.809 303.412c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm25.5 0c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm248.024-84.261c0 36.44-34.906 66.087-77.812 66.087h-92.746c-2.761 0-5-2.238-5-5s2.239-5 5-5h92.746c37.392 0 67.812-25.16 67.812-56.087v-1.424c0-30.926-30.42-56.086-67.812-56.086h-76.258l52.023 34.752c2.296 1.533 2.914 4.639 1.38 6.935-1.524 2.28-4.623 2.925-6.935 1.38-.17-.113-65.842-43.983-65.734-43.911-2.587-1.741-2.971-5.396-.808-7.629.619-.639-3.654 2.299 66.543-44.594 2.296-1.534 5.401-.916 6.935 1.38s.916 5.401-1.38 6.935l-52.026 34.752h76.261c42.905 0 77.812 29.646 77.812 66.086v1.424z"></path></g></g></svg>
+										<div class="pbmit-static-btn">
+											<a class="pbmit-btn pbmit-btn-outline w-100" href="about-us.html">
+												<span class="pbmit-button-content-wrapper">
+													<span class="pbmit-button-text">Download Ship Particulars</span>
+													<span class="custom-btn-icon">
+														<svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M21.25 9.25391C23.9687 9.26891 25.4413 9.39016 26.4013 10.3502C27.5 11.4489 27.5 13.2164 27.5 16.7514V18.0014C27.5 21.5377 27.5 23.3052 26.4013 24.4039C25.3038 25.5014 23.535 25.5014 20 25.5014H10C6.465 25.5014 4.69625 25.5014 3.59875 24.4039C2.5 23.3039 2.5 21.5377 2.5 18.0014V16.7514C2.5 13.2164 2.5 11.4489 3.59875 10.3502C4.55875 9.39016 6.03125 9.26891 8.75 9.25391" stroke-width="2" stroke-linecap="round"/>
+															<path d="M15 4V18.25M18.75 13.875L15 18.25L11.25 13.875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													</span>
+												</span>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -400,8 +448,18 @@
 										<div class="pbmit-service-description">
 											<p>GT. 391 T - Capacity of 550 KL</p>
 										</div>
-										<div class="pbmit-service-icon">
-											<svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="_x30_1_x2C__package_x2C__Box_x2C__delivery_x2C__return_x2C__shipment2"><g id="XMLID_186_2"><path id="XMLID_187_2" d="m214.187 139.087h83.622v70.413h-83.622z"></path><path id="XMLID_206_2" d="m218.666 44.516h-115.871l-53.655 84.571h155.727z"></path><path id="XMLID_256_2" d="m296.997 129.087-13.799-84.571h-54.4l-13.799 84.571z"></path><path id="XMLID_257_2" d="m462.86 129.087-53.655-84.571h-115.875l13.799 84.571z"></path><path id="XMLID_265_2" d="m307.809 139.087v75.413c0 2.761-2.239 5-5 5h-93.622c-2.761 0-5-2.239-5-5v-75.413h-159.141v328.397h421.907v-328.397zm-224.809 303.412c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm25.5 0c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm248.024-84.261c0 36.44-34.906 66.087-77.812 66.087h-92.746c-2.761 0-5-2.238-5-5s2.239-5 5-5h92.746c37.392 0 67.812-25.16 67.812-56.087v-1.424c0-30.926-30.42-56.086-67.812-56.086h-76.258l52.023 34.752c2.296 1.533 2.914 4.639 1.38 6.935-1.524 2.28-4.623 2.925-6.935 1.38-.17-.113-65.842-43.983-65.734-43.911-2.587-1.741-2.971-5.396-.808-7.629.619-.639-3.654 2.299 66.543-44.594 2.296-1.534 5.401-.916 6.935 1.38s.916 5.401-1.38 6.935l-52.026 34.752h76.261c42.905 0 77.812 29.646 77.812 66.086v1.424z"></path></g></g></svg>
+										<div class="pbmit-static-btn">
+											<a class="pbmit-btn pbmit-btn-outline w-100" href="about-us.html">
+												<span class="pbmit-button-content-wrapper">
+													<span class="pbmit-button-text">Download Ship Particulars</span>
+													<span class="custom-btn-icon">
+														<svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M21.25 9.25391C23.9687 9.26891 25.4413 9.39016 26.4013 10.3502C27.5 11.4489 27.5 13.2164 27.5 16.7514V18.0014C27.5 21.5377 27.5 23.3052 26.4013 24.4039C25.3038 25.5014 23.535 25.5014 20 25.5014H10C6.465 25.5014 4.69625 25.5014 3.59875 24.4039C2.5 23.3039 2.5 21.5377 2.5 18.0014V16.7514C2.5 13.2164 2.5 11.4489 3.59875 10.3502C4.55875 9.39016 6.03125 9.26891 8.75 9.25391" stroke-width="2" stroke-linecap="round"/>
+															<path d="M15 4V18.25M18.75 13.875L15 18.25L11.25 13.875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													</span>
+												</span>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -431,8 +489,18 @@
 										<div class="pbmit-service-description">
 											<p>GT. 471 T - Capacity of 800 M</p>
 										</div>
-										<div class="pbmit-service-icon">
-											<svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="_x30_1_x2C__package_x2C__Box_x2C__delivery_x2C__return_x2C__shipment3"><g id="XMLID_186_3"><path id="XMLID_187_3" d="m214.187 139.087h83.622v70.413h-83.622z"></path><path id="XMLID_206_3" d="m218.666 44.516h-115.871l-53.655 84.571h155.727z"></path><path id="XMLID_256_3" d="m296.997 129.087-13.799-84.571h-54.4l-13.799 84.571z"></path><path id="XMLID_257_3" d="m462.86 129.087-53.655-84.571h-115.875l13.799 84.571z"></path><path id="XMLID_265_3" d="m307.809 139.087v75.413c0 2.761-2.239 5-5 5h-93.622c-2.761 0-5-2.239-5-5v-75.413h-159.141v328.397h421.907v-328.397zm-224.809 303.412c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm25.5 0c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm248.024-84.261c0 36.44-34.906 66.087-77.812 66.087h-92.746c-2.761 0-5-2.238-5-5s2.239-5 5-5h92.746c37.392 0 67.812-25.16 67.812-56.087v-1.424c0-30.926-30.42-56.086-67.812-56.086h-76.258l52.023 34.752c2.296 1.533 2.914 4.639 1.38 6.935-1.524 2.28-4.623 2.925-6.935 1.38-.17-.113-65.842-43.983-65.734-43.911-2.587-1.741-2.971-5.396-.808-7.629.619-.639-3.654 2.299 66.543-44.594 2.296-1.534 5.401-.916 6.935 1.38s.916 5.401-1.38 6.935l-52.026 34.752h76.261c42.905 0 77.812 29.646 77.812 66.086v1.424z"></path></g></g></svg>
+										<div class="pbmit-static-btn">
+											<a class="pbmit-btn pbmit-btn-outline w-100" href="about-us.html">
+												<span class="pbmit-button-content-wrapper">
+													<span class="pbmit-button-text">Download Ship Particulars</span>
+													<span class="custom-btn-icon">
+														<svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M21.25 9.25391C23.9687 9.26891 25.4413 9.39016 26.4013 10.3502C27.5 11.4489 27.5 13.2164 27.5 16.7514V18.0014C27.5 21.5377 27.5 23.3052 26.4013 24.4039C25.3038 25.5014 23.535 25.5014 20 25.5014H10C6.465 25.5014 4.69625 25.5014 3.59875 24.4039C2.5 23.3039 2.5 21.5377 2.5 18.0014V16.7514C2.5 13.2164 2.5 11.4489 3.59875 10.3502C4.55875 9.39016 6.03125 9.26891 8.75 9.25391" stroke-width="2" stroke-linecap="round"/>
+															<path d="M15 4V18.25M18.75 13.875L15 18.25L11.25 13.875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													</span>
+												</span>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -462,8 +530,18 @@
 										<div class="pbmit-service-description">
 											<p>GT. 319 T - Capacity of 350 KL</p>
 										</div>
-										<div class="pbmit-service-icon">
-											<svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="_x30_1_x2C__package_x2C__Box_x2C__delivery_x2C__return_x2C__shipment4"><g id="XMLID_186_4"><path id="XMLID_187_4" d="m214.187 139.087h83.622v70.413h-83.622z"></path><path id="XMLID_206_4" d="m218.666 44.516h-115.871l-53.655 84.571h155.727z"></path><path id="XMLID_256_4" d="m296.997 129.087-13.799-84.571h-54.4l-13.799 84.571z"></path><path id="XMLID_257_4" d="m462.86 129.087-53.655-84.571h-115.875l13.799 84.571z"></path><path id="XMLID_265_4" d="m307.809 139.087v75.413c0 2.761-2.239 5-5 5h-93.622c-2.761 0-5-2.239-5-5v-75.413h-159.141v328.397h421.907v-328.397zm-224.809 303.412c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm25.5 0c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm248.024-84.261c0 36.44-34.906 66.087-77.812 66.087h-92.746c-2.761 0-5-2.238-5-5s2.239-5 5-5h92.746c37.392 0 67.812-25.16 67.812-56.087v-1.424c0-30.926-30.42-56.086-67.812-56.086h-76.258l52.023 34.752c2.296 1.533 2.914 4.639 1.38 6.935-1.524 2.28-4.623 2.925-6.935 1.38-.17-.113-65.842-43.983-65.734-43.911-2.587-1.741-2.971-5.396-.808-7.629.619-.639-3.654 2.299 66.543-44.594 2.296-1.534 5.401-.916 6.935 1.38s.916 5.401-1.38 6.935l-52.026 34.752h76.261c42.905 0 77.812 29.646 77.812 66.086v1.424z"></path></g></g></svg>
+										<div class="pbmit-static-btn">
+											<a class="pbmit-btn pbmit-btn-outline w-100" href="about-us.html">
+												<span class="pbmit-button-content-wrapper">
+													<span class="pbmit-button-text">Download Ship Particulars</span>
+													<span class="custom-btn-icon">
+														<svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M21.25 9.25391C23.9687 9.26891 25.4413 9.39016 26.4013 10.3502C27.5 11.4489 27.5 13.2164 27.5 16.7514V18.0014C27.5 21.5377 27.5 23.3052 26.4013 24.4039C25.3038 25.5014 23.535 25.5014 20 25.5014H10C6.465 25.5014 4.69625 25.5014 3.59875 24.4039C2.5 23.3039 2.5 21.5377 2.5 18.0014V16.7514C2.5 13.2164 2.5 11.4489 3.59875 10.3502C4.55875 9.39016 6.03125 9.26891 8.75 9.25391" stroke-width="2" stroke-linecap="round"/>
+															<path d="M15 4V18.25M18.75 13.875L15 18.25L11.25 13.875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													</span>
+												</span>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -493,8 +571,18 @@
 										<div class="pbmit-service-description">
 											<p>GT. 76 T - Capacity of 160 KL</p>
 										</div>
-										<div class="pbmit-service-icon">
-											<svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="_x30_1_x2C__package_x2C__Box_x2C__delivery_x2C__return_x2C__shipment5"><g id="XMLID_186_5"><path id="XMLID_187_5" d="m214.187 139.087h83.622v70.413h-83.622z"></path><path id="XMLID_206_5" d="m218.666 44.516h-115.871l-53.655 84.571h155.727z"></path><path id="XMLID_256_5" d="m296.997 129.087-13.799-84.571h-54.4l-13.799 84.571z"></path><path id="XMLID_257_5" d="m462.86 129.087-53.655-84.571h-115.875l13.799 84.571z"></path><path id="XMLID_265_5" d="m307.809 139.087v75.413c0 2.761-2.239 5-5 5h-93.622c-2.761 0-5-2.239-5-5v-75.413h-159.141v328.397h421.907v-328.397zm-224.809 303.412c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm25.5 0c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm248.024-84.261c0 36.44-34.906 66.087-77.812 66.087h-92.746c-2.761 0-5-2.238-5-5s2.239-5 5-5h92.746c37.392 0 67.812-25.16 67.812-56.087v-1.424c0-30.926-30.42-56.086-67.812-56.086h-76.258l52.023 34.752c2.296 1.533 2.914 4.639 1.38 6.935-1.524 2.28-4.623 2.925-6.935 1.38-.17-.113-65.842-43.983-65.734-43.911-2.587-1.741-2.971-5.396-.808-7.629.619-.639-3.654 2.299 66.543-44.594 2.296-1.534 5.401-.916 6.935 1.38s.916 5.401-1.38 6.935l-52.026 34.752h76.261c42.905 0 77.812 29.646 77.812 66.086v1.424z"></path></g></g></svg>
+										<div class="pbmit-static-btn">
+											<a class="pbmit-btn pbmit-btn-outline w-100" href="about-us.html">
+												<span class="pbmit-button-content-wrapper">
+													<span class="pbmit-button-text">Download Ship Particulars</span>
+													<span class="custom-btn-icon">
+														<svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M21.25 9.25391C23.9687 9.26891 25.4413 9.39016 26.4013 10.3502C27.5 11.4489 27.5 13.2164 27.5 16.7514V18.0014C27.5 21.5377 27.5 23.3052 26.4013 24.4039C25.3038 25.5014 23.535 25.5014 20 25.5014H10C6.465 25.5014 4.69625 25.5014 3.59875 24.4039C2.5 23.3039 2.5 21.5377 2.5 18.0014V16.7514C2.5 13.2164 2.5 11.4489 3.59875 10.3502C4.55875 9.39016 6.03125 9.26891 8.75 9.25391" stroke-width="2" stroke-linecap="round"/>
+															<path d="M15 4V18.25M18.75 13.875L15 18.25L11.25 13.875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													</span>
+												</span>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -524,8 +612,18 @@
 										<div class="pbmit-service-description">
 											<p>GT. 735 T - Capacity of 1200 KL</p>
 										</div>
-										<div class="pbmit-service-icon">
-											<svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="_x30_1_x2C__package_x2C__Box_x2C__delivery_x2C__return_x2C__shipment6"><g id="XMLID_186_6"><path id="XMLID_187_6" d="m214.187 139.087h83.622v70.413h-83.622z"></path><path id="XMLID_206_6" d="m218.666 44.516h-115.871l-53.655 84.571h155.727z"></path><path id="XMLID_256_6" d="m296.997 129.087-13.799-84.571h-54.4l-13.799 84.571z"></path><path id="XMLID_257_6" d="m462.86 129.087-53.655-84.571h-115.875l13.799 84.571z"></path><path id="XMLID_265_6" d="m307.809 139.087v75.413c0 2.761-2.239 5-5 5h-93.622c-2.761 0-5-2.239-5-5v-75.413h-159.141v328.397h421.907v-328.397zm-224.809 303.412c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm25.5 0c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm248.024-84.261c0 36.44-34.906 66.087-77.812 66.087h-92.746c-2.761 0-5-2.238-5-5s2.239-5 5-5h92.746c37.392 0 67.812-25.16 67.812-56.087v-1.424c0-30.926-30.42-56.086-67.812-56.086h-76.258l52.023 34.752c2.296 1.533 2.914 4.639 1.38 6.935-1.524 2.28-4.623 2.925-6.935 1.38-.17-.113-65.842-43.983-65.734-43.911-2.587-1.741-2.971-5.396-.808-7.629.619-.639-3.654 2.299 66.543-44.594 2.296-1.534 5.401-.916 6.935 1.38s.916 5.401-1.38 6.935l-52.026 34.752h76.261c42.905 0 77.812 29.646 77.812 66.086v1.424z"></path></g></g></svg>
+										<div class="pbmit-static-btn">
+											<a class="pbmit-btn pbmit-btn-outline w-100" href="about-us.html">
+												<span class="pbmit-button-content-wrapper">
+													<span class="pbmit-button-text">Download Ship Particulars</span>
+													<span class="custom-btn-icon">
+														<svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M21.25 9.25391C23.9687 9.26891 25.4413 9.39016 26.4013 10.3502C27.5 11.4489 27.5 13.2164 27.5 16.7514V18.0014C27.5 21.5377 27.5 23.3052 26.4013 24.4039C25.3038 25.5014 23.535 25.5014 20 25.5014H10C6.465 25.5014 4.69625 25.5014 3.59875 24.4039C2.5 23.3039 2.5 21.5377 2.5 18.0014V16.7514C2.5 13.2164 2.5 11.4489 3.59875 10.3502C4.55875 9.39016 6.03125 9.26891 8.75 9.25391" stroke-width="2" stroke-linecap="round"/>
+															<path d="M15 4V18.25M18.75 13.875L15 18.25L11.25 13.875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													</span>
+												</span>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -555,8 +653,18 @@
 										<div class="pbmit-service-description">
 											<p>GT. 471 T - Capacity of 800 M</p>
 										</div>
-										<div class="pbmit-service-icon">
-											<svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="_x30_1_x2C__package_x2C__Box_x2C__delivery_x2C__return_x2C__shipment7"><g id="XMLID_186_7"><path id="XMLID_187_7" d="m214.187 139.087h83.622v70.413h-83.622z"></path><path id="XMLID_206_7" d="m218.666 44.516h-115.871l-53.655 84.571h155.727z"></path><path id="XMLID_256_7" d="m296.997 129.087-13.799-84.571h-54.4l-13.799 84.571z"></path><path id="XMLID_257_7" d="m462.86 129.087-53.655-84.571h-115.875l13.799 84.571z"></path><path id="XMLID_265_7" d="m307.809 139.087v75.413c0 2.761-2.239 5-5 5h-93.622c-2.761 0-5-2.239-5-5v-75.413h-159.141v328.397h421.907v-328.397zm-224.809 303.412c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm25.5 0c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm248.024-84.261c0 36.44-34.906 66.087-77.812 66.087h-92.746c-2.761 0-5-2.238-5-5s2.239-5 5-5h92.746c37.392 0 67.812-25.16 67.812-56.087v-1.424c0-30.926-30.42-56.086-67.812-56.086h-76.258l52.023 34.752c2.296 1.533 2.914 4.639 1.38 6.935-1.524 2.28-4.623 2.925-6.935 1.38-.17-.113-65.842-43.983-65.734-43.911-2.587-1.741-2.971-5.396-.808-7.629.619-.639-3.654 2.299 66.543-44.594 2.296-1.534 5.401-.916 6.935 1.38s.916 5.401-1.38 6.935l-52.026 34.752h76.261c42.905 0 77.812 29.646 77.812 66.086v1.424z"></path></g></g></svg>
+										<div class="pbmit-static-btn">
+											<a class="pbmit-btn pbmit-btn-outline w-100" href="about-us.html">
+												<span class="pbmit-button-content-wrapper">
+													<span class="pbmit-button-text">Download Ship Particulars</span>
+													<span class="custom-btn-icon">
+														<svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M21.25 9.25391C23.9687 9.26891 25.4413 9.39016 26.4013 10.3502C27.5 11.4489 27.5 13.2164 27.5 16.7514V18.0014C27.5 21.5377 27.5 23.3052 26.4013 24.4039C25.3038 25.5014 23.535 25.5014 20 25.5014H10C6.465 25.5014 4.69625 25.5014 3.59875 24.4039C2.5 23.3039 2.5 21.5377 2.5 18.0014V16.7514C2.5 13.2164 2.5 11.4489 3.59875 10.3502C4.55875 9.39016 6.03125 9.26891 8.75 9.25391" stroke-width="2" stroke-linecap="round"/>
+															<path d="M15 4V18.25M18.75 13.875L15 18.25L11.25 13.875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													</span>
+												</span>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -586,8 +694,18 @@
 										<div class="pbmit-service-description">
 											<p>GT. 704 T - Capacity of 1200 KL</p>
 										</div>
-										<div class="pbmit-service-icon">
-											<svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g id="_x30_1_x2C__package_x2C__Box_x2C__delivery_x2C__return_x2C__shipment8"><g id="XMLID_186_8"><path id="XMLID_187_8" d="m214.187 139.087h83.622v70.413h-83.622z"></path><path id="XMLID_206_8" d="m218.666 44.516h-115.871l-53.655 84.571h155.727z"></path><path id="XMLID_256_8" d="m296.997 129.087-13.799-84.571h-54.4l-13.799 84.571z"></path><path id="XMLID_257_8" d="m462.86 129.087-53.655-84.571h-115.875l13.799 84.571z"></path><path id="XMLID_265_8" d="m307.809 139.087v75.413c0 2.761-2.239 5-5 5h-93.622c-2.761 0-5-2.239-5-5v-75.413h-159.141v328.397h421.907v-328.397zm-224.809 303.412c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm25.5 0c0 2.762-2.239 5-5 5s-5-2.238-5-5v-82c0-2.762 2.239-5 5-5s5 2.238 5 5zm248.024-84.261c0 36.44-34.906 66.087-77.812 66.087h-92.746c-2.761 0-5-2.238-5-5s2.239-5 5-5h92.746c37.392 0 67.812-25.16 67.812-56.087v-1.424c0-30.926-30.42-56.086-67.812-56.086h-76.258l52.023 34.752c2.296 1.533 2.914 4.639 1.38 6.935-1.524 2.28-4.623 2.925-6.935 1.38-.17-.113-65.842-43.983-65.734-43.911-2.587-1.741-2.971-5.396-.808-7.629.619-.639-3.654 2.299 66.543-44.594 2.296-1.534 5.401-.916 6.935 1.38s.916 5.401-1.38 6.935l-52.026 34.752h76.261c42.905 0 77.812 29.646 77.812 66.086v1.424z"></path></g></g></svg>
+										<div class="pbmit-static-btn">
+											<a class="pbmit-btn pbmit-btn-outline w-100" href="about-us.html">
+												<span class="pbmit-button-content-wrapper">
+													<span class="pbmit-button-text">Download Ship Particulars</span>
+													<span class="custom-btn-icon">
+														<svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M21.25 9.25391C23.9687 9.26891 25.4413 9.39016 26.4013 10.3502C27.5 11.4489 27.5 13.2164 27.5 16.7514V18.0014C27.5 21.5377 27.5 23.3052 26.4013 24.4039C25.3038 25.5014 23.535 25.5014 20 25.5014H10C6.465 25.5014 4.69625 25.5014 3.59875 24.4039C2.5 23.3039 2.5 21.5377 2.5 18.0014V16.7514C2.5 13.2164 2.5 11.4489 3.59875 10.3502C4.55875 9.39016 6.03125 9.26891 8.75 9.25391" stroke-width="2" stroke-linecap="round"/>
+															<path d="M15 4V18.25M18.75 13.875L15 18.25L11.25 13.875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+													</span>
+												</span>
+											</a>
 										</div>
 									</div>
 								</div>
