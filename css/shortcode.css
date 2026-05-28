@@ -33,7 +33,7 @@
 /*  00 - Section Title
 /*----------------------------------------*/
 .pbmit-heading-subheading{
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 .pbmit-heading-subheading .pbmit-subtitle{
 	font-family: var(--pbmit-heading-typography-font-family);
@@ -2455,7 +2455,7 @@
     background-attachment: scroll;
 	color: rgba(var(--pbmit-white-color-rgb), 1);
 	margin: 0 20px;
-	padding-top: 100px;
+	padding-top: 80px;
 	border-radius: 30px;
 	font-size: 14px;
 	position: relative;
@@ -2509,7 +2509,6 @@
 }
 .site-footer .widget{
 	position: relative;
-	padding-top: 75px;
 }
 .site-footer .pbmit-footer-logo {
 	max-width: 45px;
