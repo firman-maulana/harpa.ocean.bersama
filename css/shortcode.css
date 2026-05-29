@@ -3787,7 +3787,6 @@
 	flex: 8;
 }
 .pbmit-static-box-style-1{
-	flex: 1;
 	transition: .7s;
 	position: relative;
 	overflow: hidden;
@@ -3922,7 +3921,6 @@
 	border-radius: inherit !important;
 }
 .pbmit-static-box-style-1.pbmit-active .pbmit-staticbox-wrapper {
-    background-color: var(--pbmit-white-color);
     border-radius: 30px;
 }
 .pbmit-static-box-style-1.pbmit-active .pbmit-bg-imgbox{

@@ -364,18 +364,18 @@
 						<article class="pbmit-static-box-style-1" data-closed-img="images/homepage-1/static-box/static-box-01.png" data-open-img="images/homepage-1/static-box/static-box-011.png">
 							<div class="pbmit-staticbox-wrapper">
 								<div class="pbmit-bg-imgbox col-md-6"
-									style="background-image: url(images/homepage-1/static-box/static-box-01.png);">
+									style="background-image: url(images/homepage-1/static-box/static-box-01.png); background-size: cover; background-position: center center; background-repeat: no-repeat;">
 									<div class="pbmit-img">
-										<img src="images/homepage-1/static-box/static-box-011.png" class="img-fluid"
+										<img src="images/homepage-1/static-box/static-box-01.png" class="img-fluid"
 											alt="Receive packages">
 									</div>
 								</div>
 							</div>
 						</article>
-						<article class="pbmit-static-box-style-1" data-closed-img="images/homepage-1/static-box/static-box-02.png" data-open-img="images/homepage-1/static-box/static-box-02.png">
+						<article class="pbmit-static-box-style-1" data-closed-img="images/homepage-1/static-box/static-box-02.png" data-open-img="images/homepage-1/static-box/static-box-022.png">
 							<div class="pbmit-staticbox-wrapper">
 								<div class="pbmit-bg-imgbox col-md-6"
-									style="background-image: url(images/homepage-1/static-box/static-box-02.png);">
+									style="background-image: url(images/homepage-1/static-box/static-box-02.png); background-size: cover; background-position: center center; background-repeat: no-repeat;">
 									<div class="pbmit-img">
 										<img src="images/homepage-1/static-box/static-box-02.png" class="img-fluid"
 											alt="Deliver packages">
@@ -383,10 +383,10 @@
 								</div>
 							</div>
 						</article>
-						<article class="pbmit-static-box-style-1 pbmit-active" data-closed-img="images/homepage-1/static-box/static-box-03.png" data-open-img="images/homepage-1/static-box/static-box-03.png">
+						<article class="pbmit-static-box-style-1 pbmit-active" data-closed-img="images/homepage-1/static-box/static-box-03.png" data-open-img="images/homepage-1/static-box/static-box-033.png">
 							<div class="pbmit-staticbox-wrapper">
 								<div class="pbmit-bg-imgbox col-md-6"
-									style="background-image: url(images/homepage-1/static-box/static-box-03.png);">
+									style="background-image: url(images/homepage-1/static-box/static-box-03.png); background-size: cover; background-position: center center; background-repeat: no-repeat;">
 									<div class="pbmit-img">
 										<img src="images/homepage-1/static-box/static-box-03.png" class="img-fluid"
 											alt="Transport packages">
@@ -394,10 +394,10 @@
 								</div>
 							</div>
 						</article>
-						<article class="pbmit-static-box-style-1" data-closed-img="images/homepage-1/static-box/static-box-04.png" data-open-img="images/homepage-1/static-box/static-box-04.png">
+						<article class="pbmit-static-box-style-1" data-closed-img="images/homepage-1/static-box/static-box-04.png" data-open-img="images/homepage-1/static-box/static-box-044.png">
 							<div class="pbmit-staticbox-wrapper">
 								<div class="pbmit-bg-imgbox col-md-6"
-									style="background-image: url(images/homepage-1/static-box/static-box-04.png);">
+									style="background-image: url(images/homepage-1/static-box/static-box-04.png); background-size: cover; background-position: center center; background-repeat: no-repeat;">
 									<div class="pbmit-img">
 										<img src="images/homepage-1/static-box/static-box-04.png" class="img-fluid"
 											alt="Warehousing Operation">
@@ -405,10 +405,10 @@
 								</div>
 							</div>
 						</article>
-						<article class="pbmit-static-box-style-1" data-closed-img="images/homepage-1/static-box/static-box-05.png" data-open-img="images/homepage-1/static-box/static-box-05.png">
+						<article class="pbmit-static-box-style-1" data-closed-img="images/homepage-1/static-box/static-box-05.png" data-open-img="images/homepage-1/static-box/static-box-055.png">
 							<div class="pbmit-staticbox-wrapper">
 								<div class="pbmit-bg-imgbox col-md-6"
-									style="background-image: url(images/homepage-1/static-box/static-box-05.png);">
+									style="background-image: url(images/homepage-1/static-box/static-box-05.png); background-size: cover; background-position: center center; background-repeat: no-repeat;">
 									<div class="pbmit-img">
 										<img src="images/homepage-1/static-box/static-box-05.png" class="img-fluid"
 											alt="Warehousing Operation">
@@ -735,8 +735,10 @@
 	
 	<!-- Custom Script for Static Box -->
 	<style>
-		/* Prevent zoom effect on static box background images */
-		.pbmit-static-box-style-1 .pbmit-bg-imgbox {
+		/* Force background image to always show and be full on ALL boxes */
+		.pbmit-static-box-style-1 .pbmit-bg-imgbox,
+		.pbmit-static-box-style-1:not(.pbmit-active) .pbmit-bg-imgbox,
+		.pbmit-static-box-style-1.pbmit-active .pbmit-bg-imgbox {
 			background-size: cover !important;
 			background-position: center center !important;
 			background-repeat: no-repeat !important;
@@ -744,8 +746,29 @@
 			visibility: visible !important;
 		}
 		
-		/* Ensure smooth transition without zoom effect */
-		.pbmit-static-box-style-1:not(.pbmit-active) .pbmit-bg-imgbox {
+		/* Override responsive CSS that removes background on inactive boxes */
+		@media(min-width:1025px) {
+			.pbmit-static-box-style-1:not(.pbmit-active) .pbmit-bg-imgbox {
+				background-color: transparent !important;
+				/* Don't set background-image to none - keep it! */
+			}
+			
+			.pbmit-static-box-style-1:not(.pbmit-active) .pbmit-bg-imgbox::after {
+				background: transparent !important;
+			}
+			
+			/* Perbesar lebar box yang tertutup */
+			.pbmit-static-box-style-1:not(.pbmit-active) {
+				flex: 4 !important; /* Dari 1 menjadi 2, jadi 2x lebih lebar */
+			}
+		}
+		
+		/* Ensure smooth transition */
+		.pbmit-static-box-style-1 {
+			transition: flex .7s ease-in-out !important;
+		}
+		
+		.pbmit-static-box-style-1 .pbmit-bg-imgbox {
 			transition: width .5s, background-image .3s ease-in-out !important;
 		}
 		
@@ -755,53 +778,130 @@
 			transform: none !important;
 		}
 		
-		/* Add smooth transition for active box */
-		.pbmit-static-box-style-1.pbmit-active .pbmit-bg-imgbox {
-			transition: width .5s, background-image .3s ease-in-out !important;
+		/* Hide the img element as we're using background */
+		.pbmit-static-box-style-1 .pbmit-img {
+			display: none !important;
+		}
+		
+		/* Hapus space/padding/margin yang tidak perlu */
+		.pbmit-static-box-style-1 {
+			margin-bottom: 0 !important;
+		}
+		
+		.pbmit-static-box-style-1 .pbmit-staticbox-wrapper {
+			padding: 0 !important;
+		}
+		
+		.pbmit-static-box-style-1 .pbmit-bg-imgbox {
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		
+		/* Pastikan tidak ada gap antar box */
+		.pbmit-element-static-box-style-1 .row {
+			gap: 0 !important;
+			row-gap: 0 !important;
+			column-gap: 0 !important;
+		}
+		
+		/* Responsive: Saat box tertata 1 kolom (mobile/tablet) */
+		@media(max-width: 1024px) {
+			/* Tampilkan semua box dalam 1 kolom */
+			.pbmit-element-static-box-style-1 .row {
+				display: flex !important;
+				flex-direction: column !important;
+			}
+			
+			.pbmit-static-box-style-1 {
+				width: 100% !important;
+				flex: none !important;
+				height: 400px !important;
+				margin-bottom: 15px !important;
+			}
+			
+			/* Semua box menampilkan foto terbuka (open image) */
+			.pbmit-static-box-style-1 .pbmit-bg-imgbox {
+				width: 100% !important;
+			}
+			
+			/* Override untuk memastikan background tetap tampil */
+			.pbmit-static-box-style-1:not(.pbmit-active) .pbmit-bg-imgbox {
+				background-color: transparent !important;
+				opacity: 1 !important;
+				visibility: visible !important;
+			}
 		}
 	</style>
 	<script>
 		jQuery(document).ready(function($) {
 			console.log('Static box script loaded');
 			
+			// Function to check if we're in mobile/tablet view
+			function isMobileView() {
+				return $(window).width() <= 1024;
+			}
+			
 			// Function to update background image based on active state
 			function updateBoxImages() {
 				console.log('Updating box images...');
+				var isMobile = isMobileView();
+				
 				$('.pbmit-element-static-box-style-1 .pbmit-static-box-style-1').each(function(index) {
 					var $box = $(this);
 					var $bgImgBox = $box.find('.pbmit-bg-imgbox');
-					var $img = $box.find('.pbmit-img img');
 					
 					var closedImg = $box.data('closed-img');
 					var openImg = $box.data('open-img');
 					
 					console.log('Box ' + index + ':', {
 						isActive: $box.hasClass('pbmit-active'),
+						isMobile: isMobile,
 						closedImg: closedImg,
 						openImg: openImg
 					});
 					
-					if ($box.hasClass('pbmit-active')) {
-						// Box is open - use open image
+					// Di mobile, semua box tampilkan foto terbuka
+					if (isMobile) {
 						if (openImg) {
-							$bgImgBox.attr('style', 'background-image: url(' + openImg + ') !important; background-size: cover !important; background-position: center center !important; opacity: 1 !important; visibility: visible !important;');
-							$img.attr('src', openImg);
-							console.log('Set active box ' + index + ' to open image');
+							var styleStr = 'background-image: url(' + openImg + ') !important; ' +
+										   'background-size: cover !important; ' +
+										   'background-position: center center !important; ' +
+										   'background-repeat: no-repeat !important;';
+							$bgImgBox.attr('style', styleStr);
+							console.log('Mobile: Set box ' + index + ' to open image');
 						}
 					} else {
-						// Box is closed - use closed image
-						if (closedImg) {
-							$bgImgBox.attr('style', 'background-image: url(' + closedImg + ') !important; background-size: cover !important; background-position: center center !important; opacity: 1 !important; visibility: visible !important;');
-							$img.attr('src', closedImg);
-							console.log('Set inactive box ' + index + ' to closed image');
+						// Di desktop, gunakan logika normal (closed/open based on active state)
+						if ($box.hasClass('pbmit-active')) {
+							// Box is open - use open image as background
+							if (openImg) {
+								var styleStr = 'background-image: url(' + openImg + ') !important; ' +
+											   'background-size: cover !important; ' +
+											   'background-position: center center !important; ' +
+											   'background-repeat: no-repeat !important;';
+								$bgImgBox.attr('style', styleStr);
+								console.log('Desktop: Set active box ' + index + ' to open image');
+							}
+						} else {
+							// Box is closed - use closed image as background
+							if (closedImg) {
+								var styleStr = 'background-image: url(' + closedImg + ') !important; ' +
+											   'background-size: cover !important; ' +
+											   'background-position: center center !important; ' +
+											   'background-repeat: no-repeat !important;';
+								$bgImgBox.attr('style', styleStr);
+								console.log('Desktop: Set inactive box ' + index + ' to closed image');
+							}
 						}
 					}
 				});
 			}
 			
-			// Initialize: Remove active class from all boxes and set 3rd box as active
-			$('.pbmit-element-static-box-style-1 .pbmit-static-box-style-1').removeClass('pbmit-active');
-			$('.pbmit-element-static-box-style-1 .pbmit-static-box-style-1').eq(2).addClass('pbmit-active');
+			// Initialize: Remove active class from all boxes and set 3rd box as active (only on desktop)
+			if (!isMobileView()) {
+				$('.pbmit-element-static-box-style-1 .pbmit-static-box-style-1').removeClass('pbmit-active');
+				$('.pbmit-element-static-box-style-1 .pbmit-static-box-style-1').eq(2).addClass('pbmit-active');
+			}
 			
 			// Force update images immediately
 			updateBoxImages();
@@ -815,15 +915,22 @@
 				updateBoxImages();
 			}, 500);
 			
-			// Handle mouseover event to change active box and update images
+			// Handle mouseover event to change active box and update images (only on desktop)
 			$('.pbmit-element-static-box-style-1 .pbmit-static-box-style-1').on('mouseover', function() {
-				var $this = $(this);
-				console.log('Mouseover on box');
-				
-				// Update active class
-				$this.addClass('pbmit-active').siblings().removeClass('pbmit-active');
-				
-				// Update all box images
+				if (!isMobileView()) {
+					var $this = $(this);
+					console.log('Mouseover on box');
+					
+					// Update active class
+					$this.addClass('pbmit-active').siblings().removeClass('pbmit-active');
+					
+					// Update all box images
+					updateBoxImages();
+				}
+			});
+			
+			// Handle window resize to update images when switching between mobile/desktop
+			$(window).on('resize', function() {
 				updateBoxImages();
 			});
 		});
