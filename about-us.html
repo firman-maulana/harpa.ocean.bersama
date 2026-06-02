@@ -949,6 +949,13 @@
 				font-size: 14px;
 			}
 		}
+		
+		/* Khusus untuk layar 494px - 1024px: tampilkan hanya bagian atas foto */
+		@media(min-width: 494px) and (max-width: 1024px) {
+			.pbmit-static-box-style-1 .pbmit-bg-imgbox {
+				background-position: top center !important;
+			}
+		}
 	</style>
 	<script>
 		jQuery(document).ready(function($) {
@@ -959,10 +966,17 @@
 				return $(window).width() <= 1024;
 			}
 			
+			// Function to check if we're in tablet view (494px-1024px)
+			function isTabletView() {
+				var width = $(window).width();
+				return width >= 494 && width <= 1024;
+			}
+			
 			// Function to update background image based on active state
 			function updateBoxImages() {
 				console.log('Updating box images...');
 				var isMobile = isMobileView();
+				var isTablet = isTabletView();
 				
 				$('.pbmit-element-static-box-style-1 .pbmit-static-box-style-1').each(function(index) {
 					var $box = $(this);
@@ -971,9 +985,14 @@
 					var closedImg = $box.data('closed-img');
 					var openImg = $box.data('open-img');
 					
+					// Tentukan background-position berdasarkan ukuran layar
+					var bgPosition = isTablet ? 'top center' : 'center center';
+					
 					console.log('Box ' + index + ':', {
 						isActive: $box.hasClass('pbmit-active'),
 						isMobile: isMobile,
+						isTablet: isTablet,
+						bgPosition: bgPosition,
 						closedImg: closedImg,
 						openImg: openImg
 					});
@@ -983,10 +1002,10 @@
 						if (openImg) {
 							var styleStr = 'background-image: url(' + openImg + ') !important; ' +
 										   'background-size: cover !important; ' +
-										   'background-position: center center !important; ' +
+										   'background-position: ' + bgPosition + ' !important; ' +
 										   'background-repeat: no-repeat !important;';
 							$bgImgBox.attr('style', styleStr);
-							console.log('Mobile: Set box ' + index + ' to open image');
+							console.log('Mobile: Set box ' + index + ' to open image with position ' + bgPosition);
 						}
 					} else {
 						// Di desktop, gunakan logika normal (closed/open based on active state)
@@ -995,7 +1014,7 @@
 							if (openImg) {
 								var styleStr = 'background-image: url(' + openImg + ') !important; ' +
 											   'background-size: cover !important; ' +
-											   'background-position: center center !important; ' +
+											   'background-position: ' + bgPosition + ' !important; ' +
 											   'background-repeat: no-repeat !important;';
 								$bgImgBox.attr('style', styleStr);
 								console.log('Desktop: Set active box ' + index + ' to open image');
@@ -1005,7 +1024,7 @@
 							if (closedImg) {
 								var styleStr = 'background-image: url(' + closedImg + ') !important; ' +
 											   'background-size: cover !important; ' +
-											   'background-position: center center !important; ' +
+											   'background-position: ' + bgPosition + ' !important; ' +
 											   'background-repeat: no-repeat !important;';
 								$bgImgBox.attr('style', styleStr);
 								console.log('Desktop: Set inactive box ' + index + ' to closed image');
