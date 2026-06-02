@@ -3338,7 +3338,7 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 10px 70px;
+	padding: 10px;
 }
 .pbmit-client-wrapper{
 	position: relative;
@@ -4043,8 +4043,8 @@
 	transform: translate(-50%, -50%);
 }
 .pbmit-spinner-box-style-1 .pbmit-ihbox-box .pbmit-ihbox-icon .pbmit-ihbox-icon-wrapper{
-    height: 135px;
-    width: 135px;
+    height: 110px;
+    width: 110px;
     font-size: 35px;
     line-height: 80px;
     text-align: center;

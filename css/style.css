@@ -284,7 +284,7 @@ body {
 	background-position: right bottom;
 }
 .client-section-two{
-	padding: 80px 0px 50px 0px;
+	padding: 80px 0px 40px 0px;
 	/* margin: 0 15px; */
 	border-bottom: 1px solid #00112E1F;
 }
@@ -2124,4 +2124,245 @@ form textarea.form-control{
 }
 .pbmit-slider-one .swiper-slide-active .pbmit-slider-right-content:before{
 	display: none !important;
+}
+
+/* Custom: Reduce footer white box height - make it more compact */
+.pbmit-footer-big-area .pbmit-footer-box {
+	padding: 25px 50px !important;
+}
+.pbmit-footer-big-area .pbmit-footer-box .pbmit-heading-subheading {
+	margin-top: 0 !important;
+}
+
+/* Custom: Add stroke to footer contact icon circles */
+.pbmit-footer-big-area .pbmit-footer-box .pbmit-icon-wrapper {
+	border: 2px solid #01294B !important;
+}
+
+/* Custom: Hover effect for footer contact icons */
+.pbmit-footer-big-area .pbmit-footer-box .pbmit-icon-wrapper {
+	transition: all 0.3s ease-in-out;
+}
+.pbmit-footer-big-area .pbmit-footer-box .pbmit-icon-wrapper svg path {
+	transition: all 0.3s ease-in-out;
+}
+.pbmit-footer-big-area .pbmit-footer-box .d-flex:hover .pbmit-icon-wrapper {
+	background: #01294B !important;
+}
+.pbmit-footer-big-area .pbmit-footer-box .d-flex:hover .pbmit-icon-wrapper svg path {
+	stroke: #ffffff !important;
+	fill: #ffffff !important;
+}
+/* Keep email inner line unchanged on hover */
+.pbmit-footer-big-area .pbmit-footer-box .d-flex:hover .pbmit-icon-wrapper svg path.email-line-inner {
+	stroke: #01294B !important;
+	fill: none !important;
+}
+
+/* Custom: Disable hover effect on Let's Connect text and adjust position */
+.pbmit-footer-big-area .pbmit-footer-box .pbmit-heading-subheading .pbmit-post-title a {
+	color: inherit !important;
+	pointer-events: none;
+}
+.pbmit-footer-big-area .pbmit-footer-box .pbmit-heading-subheading .pbmit-post-title a:hover {
+	color: inherit !important;
+}
+.pbmit-footer-big-area .pbmit-footer-box .pbmit-heading-subheading {
+	margin-top: 20px !important;
+}
+
+/* Custom: Responsive footer white box for various screen sizes */
+
+/* Tablet - max width 991px */
+@media (max-width: 991px) {
+	.pbmit-footer-big-area .container-fluid {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+	.pbmit-footer-big-area .pbmit-footer-box {
+		padding: 30px 25px !important;
+	}
+	.pbmit-footer-big-area .pbmit-footer-box .row {
+		gap: 20px;
+	}
+	.pbmit-footer-big-area .pbmit-footer-box .pbmit-heading-subheading .pbmit-post-title {
+		font-size: 24px;
+	}
+}
+
+/* Mobile - max width 767px */
+@media (max-width: 767px) {
+	.pbmit-footer-big-area {
+		margin-bottom: 30px !important;
+	}
+	.pbmit-footer-big-area .pbmit-footer-box {
+		padding: 25px 20px !important;
+	}
+	.pbmit-footer-big-area .pbmit-footer-box .pbmit-heading-subheading {
+		margin-top: 0 !important;
+		margin-bottom: 20px;
+	}
+	.pbmit-footer-big-area .pbmit-footer-box .pbmit-heading-subheading .pbmit-post-title {
+		font-size: 22px;
+	}
+	.pbmit-footer-big-area .pbmit-footer-box .d-flex {
+		flex-direction: column !important;
+		text-align: center;
+	}
+	.pbmit-footer-big-area .pbmit-footer-box .pbmit-icon-wrapper {
+		margin-right: 0 !important;
+		margin-bottom: 10px;
+	}
+	.pbmit-footer-big-area .pbmit-footer-box .pbmit-btn {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* Small Mobile - max width 480px */
+@media (max-width: 480px) {
+	.pbmit-footer-big-area .pbmit-footer-box {
+		padding: 20px 15px !important;
+		border-radius: 15px !important;
+	}
+	.pbmit-footer-big-area .pbmit-footer-box .pbmit-heading-subheading .pbmit-post-title {
+		font-size: 20px;
+	}
+	.pbmit-footer-big-area .pbmit-footer-box h6 {
+		font-size: 12px !important;
+	}
+	.pbmit-footer-big-area .pbmit-footer-box a[href^="tel"],
+	.pbmit-footer-big-area .pbmit-footer-box a[href^="mailto"] {
+		font-size: 14px !important;
+	}
+}
+
+/* Custom: Hover effect for about-us.html icon boxes (Expert Engineers & Safe Efficient) */
+.pbmit-ihbox-style-3 {
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.pbmit-ihbox-style-3 .pbmit-ihbox-icon-wrapper {
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	z-index: 1;
+}
+.pbmit-ihbox-style-3 .pbmit-ihbox-icon-wrapper svg path {
+	transition: all 0.3s ease-in-out;
+}
+/* Background animation from top */
+.pbmit-ihbox-style-3 .pbmit-ihbox-icon-wrapper:before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: var(--pbmit-global-color);
+	border-radius: 10px;
+}
+.pbmit-ihbox-style-3:hover .pbmit-ihbox-icon-wrapper:before {
+	height: 100%;
+}
+.pbmit-ihbox-style-3:hover .pbmit-ihbox-icon-wrapper svg path {
+	fill: var(--pbmit-white-color) !important;
+}
+
+/* Custom: Download button styling in services.html */
+/* Set stroke to black */
+.pbmit-service-style-3 .custom-btn-icon svg path {
+	stroke: #000000 !important;
+}
+/* Keep icon container background white if exists */
+.pbmit-service-style-3 .custom-btn-icon {
+	background: white !important;
+	opacity: 1 !important;
+}
+
+/* Custom: Fix photo animation - photo enlarges when hovering on its own card */
+.pbmit-service-style-3:hover .pbmit-service-image-wrapper img {
+	height: 360px !important;
+}
+.pbmit-service-style-3:hover .pbmit-featured-wrapper {
+	mix-blend-mode: normal !important;
+}
+.pbmit-service-style-3:hover .pbmit-service-description {
+	opacity: 0 !important;
+	transform: scale(0.8) !important;
+	visibility: hidden !important;
+}
+
+/* Custom: Set default photo size to normal (not enlarged) */
+.pbmit-service-style-3 .pbmit-service-image-wrapper img {
+	height: 210px !important;
+	transition: all 0.9s ease;
+}
+/* Photo description visible by default */
+.pbmit-service-style-3 .pbmit-service-description {
+	opacity: 1 !important;
+	transform: scale(1) !important;
+	visibility: visible !important;
+}
+/* Mix blend mode luminosity by default */
+.pbmit-service-style-3 .pbmit-featured-wrapper {
+	mix-blend-mode: luminosity !important;
+}
+
+/* Custom: Align photos to be at same position regardless of description length */
+.pbmit-service-style-3 .pbmit-service-description {
+	min-height: 180px;
+}
+/* Alternative: Use flexbox to align images at the same level */
+.pbmit-service-style-3 .pbminfotech-post-item {
+	display: flex;
+	flex-direction: column;
+}
+.pbmit-service-style-3 .pbminfotech-box-content-desc-wraper {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.pbmit-service-style-3 .pbmit-service-image-wrapper {
+	margin-top: auto;
+}
+
+/* Custom: Show spinner box on footer photo hover in about-us.html */
+.team-photo-wrapper {
+	position: relative;
+}
+.team-photo-wrapper:hover .team-photo-spinner {
+	opacity: 1 !important;
+}
+
+/* Custom: Consistent client logo sizes in index.html */
+.pbmit-client-style-1 .pbmit-featured-wrapper img,
+.pbmit-client-style-1 .pbmit-client-hover-img img {
+	max-width: 150px;
+	max-height: 80px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+}
+
+/* Custom: Scale down spinner box in index.html */
+.about-section-three .pbmit-spinner-box-style-1 {
+	transform: scale(0.7);
+}
+
+/* Custom: Add horizontal line after "It's hard to imagine" text in index.html */
+.about-section-three .about-three-right-box .pbmit-heading-subheading {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid rgba(0, 17, 46, 0.1);
+}
+
+/* Custom: Reduce font size for product titles in services.html */
+.pbmit-service-style-3 .pbmit-service-title {
+	font-size: 14px !important;
+	line-height: 26px !important;
 }
