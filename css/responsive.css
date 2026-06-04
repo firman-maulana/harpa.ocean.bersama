@@ -1091,8 +1091,20 @@ body {
 		line-height: 30px;
 	}
 	/*=== Contact Us ===*/
+	.contact-us-left-area{
+		padding-right: 15px;
+		margin-bottom: 30px;
+	}
+	.contact-us-left-area .contact-bg-img {
+		margin-top: 30px;
+	}
+	.contact-us-left-area .contact-bg-img img {
+		max-width: 100%;
+		height: auto;
+	}
 	.contact-form-rightbox{
 		margin-top: 50px;
+		padding: 30px 20px;
 	}
 	.contact-iframe-section{
 		margin-top: 70px;
@@ -1531,6 +1543,21 @@ body {
 	.pbmit-portfolio-style-1 .pbmit-portfolio-title{
 		font-size: 24px;
 		line-height: 30px;
+	}
+	/*=== Contact Us ===*/
+	.contact-us-left-area{
+		padding-right: 0;
+		margin-bottom: 20px;
+	}
+	.contact-us-left-area .contact-bg-img {
+		margin-top: 20px;
+	}
+	.contact-form-rightbox{
+		padding: 25px 15px;
+	}
+	.contact-iframe-section{
+		padding: 0 15px 60px 15px;
+		margin-top: 60px;
 	}
 	/*=== Footer ===*/
 	.site-footer{
