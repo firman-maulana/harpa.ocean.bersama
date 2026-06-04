@@ -26,7 +26,7 @@ gsap.config({
 		pbmit_var.each(function() {
 			var pbmit_Class = '.pbmit-static-box-style-1,.pbmit-hover-inner li,.pbmit-service-style-3:not(.swiper-slide-duplicate)';
 			jQuery(this)
-				.find(pbmit_Class).first()
+				.find(pbmit_Class).eq(2) // Index 2 = elemen ke-3 (Andi Junaedi)
 				.addClass('pbmit-active');
 			jQuery(this)
 				.find(pbmit_Class)
