@@ -100,7 +100,7 @@ body {
 	margin-right: 15px;
 }
 .contact-one-right-bg{
-	background-image: url(../images/homepage-1/bg/freight-from-pattern.png);
+	background-image: url(../images/homepage-1/bg/freight-from-pattern.webp);
     background-position: bottom right;
     background-repeat: no-repeat;
 	border-radius: 30px;
@@ -112,7 +112,7 @@ body {
 	color: var(--pbmit-white-color);
 }
 .team-one-bg{
-	background-image: url(../images/homepage-1/bg/bg-pattern.png);
+	background-image: url(../images/homepage-1/bg/bg-pattern.webp);
 	background-position: top left;
 	background-repeat: no-repeat;
 	padding: 100px 0 115px 0;
@@ -251,7 +251,7 @@ body {
 .service-two-bg{
 	padding: 130px 0 100px 0;
 	position: relative;
-	background-image: url(../images/homepage-2/bg/service-pattern.png);
+	background-image: url(../images/homepage-2/bg/service-pattern.webp);
 	background-position: 100% -12%;
     background-repeat: no-repeat;
 }
@@ -267,7 +267,7 @@ body {
 	background-color: var(--pbmit-white-color);
 }
 .about-two-left-bg{
-	background-image: url(../images/homepage-2/bg/about-left-bg.png);
+		background-image: url(../images/homepage-2/bg/about-left-bg.webp);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;

@@ -1138,7 +1138,7 @@ body {
 	.pbmit-slider-one .pbmit-slider-item{
 		align-items: center;
 		height: 510px;
-		background: url("../images/banner-slider-img/slider1-shape.png") 50% 50% / cover no-repeat transparent;
+		background: url("../images/banner-slider-img/slider1-shape.webp") 50% 50% / cover no-repeat transparent;
 	}
 	.pbmit-slider-one .pbmit-slider-content{
 		position: relative;

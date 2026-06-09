@@ -2448,7 +2448,7 @@
 /*  08 - Footer
 /*----------------------------------------*/
 .site-footer{
-	background-image: url(../images/bg/footer-bg-pattern.png);
+	background-image: url(../images/bg/footer-bg-pattern.webp);
 	background-repeat: no-repeat;
     background-position: left bottom;
     background-size: auto;
@@ -2589,7 +2589,7 @@
 /*----------------------------------------*/
 .pbmit-title-bar-wrapper{
 	background-color: rgba(0,0,0,0.2);
-	background-image: url(../images/bg/titlebar.png);
+	background-image: url(../images/bg/titlebar.webp);
 	background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -3221,7 +3221,7 @@
 	width: 58%;
 	height: 100%;
 	transform-origin: 50% 50%;
-	background: url(../images/banner-slider-img/slider2-shape.png) 50% 50% / cover no-repeat transparent;
+	background: url(../images/banner-slider-img/slider2-shape.webp) 50% 50% / cover no-repeat transparent;
 }
 .pbmit-slider-two .pbmit-slider-bg{
 	transform: scale(1);
