@@ -2265,3 +2265,274 @@ body {
 		width: 50%;
 	}
 }
+
+/* Responsive untuk About Section Two - Join With Our Team */
+@media (min-width: 768px) and (max-width: 991px) {
+	/* Spinner box hanya hide di tablet/iPad range */
+	.spinner-box-center {
+		display: none !important;
+	}
+}
+
+/* Hide spinner box untuk laptop kecil/tablet landscape */
+@media (min-width: 992px) and (max-width: 1370px) {
+	.spinner-box-center {
+		display: none !important;
+	}
+}
+
+@media (max-width: 991px) {
+	.about-two-left-content {
+		top: 60px !important;
+		left: 30px !important;
+		right: 30px !important;
+	}
+	.about-two-left-content .pbmit-title {
+		font-size: 32px !important;
+		line-height: 1.3 !important;
+	}
+	.about-two-left-content .pbmit-heading-desc {
+		font-size: 14px !important;
+		line-height: 1.6 !important;
+	}
+	.about-two-left-content .pbmit-heading-desc br {
+		display: none;
+	}
+	
+	/* FID product cards responsive untuk iPad - stack vertical */
+	.product-card .d-flex {
+		flex-direction: column !important;
+		align-items: center !important;
+		text-align: center;
+	}
+	
+	.product-card .logo-box {
+		margin-bottom: 20px;
+	}
+	
+	.product-card .text-content {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.about-two-left-content {
+		top: 40px !important;
+		left: 20px !important;
+		right: 20px !important;
+	}
+	.about-two-left-content .pbmit-title {
+		font-size: 26px !important;
+		margin-bottom: 12px !important;
+	}
+	.about-two-left-content .pbmit-heading-desc {
+		font-size: 13px !important;
+	}
+	
+	/* Spinner box ukuran lebih kecil di mobile dan z-index rendah */
+	.spinner-box-center {
+		z-index: 1 !important;
+		left: 50% !important;
+		transform: translate(-50%, -50%) scale(0.8) !important;
+	}
+}
+
+@media (max-width: 575px) {
+	.about-two-left-content {
+		top: 30px !important;
+		left: 15px !important;
+		right: 15px !important;
+	}
+	.about-two-left-content .pbmit-title {
+		font-size: 22px !important;
+		margin-bottom: 10px !important;
+	}
+	.about-two-left-content .pbmit-heading-desc {
+		font-size: 12px !important;
+		line-height: 1.5 !important;
+	}
+	
+	/* Spinner box lebih kecil lagi di mobile kecil */
+	.spinner-box-center {
+		transform: translate(-50%, -50%) scale(0.7) !important;
+	}
+}
+
+/* About Us Section - Reduce gap between heading and paragraph on tablet/iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.about-us-section-two .row.align-items-start .col-md-5,
+	.about-us-section-two .row.align-items-start .col-md-4 {
+		flex: 0 0 48% !important;
+		max-width: 48% !important;
+	}
+	
+	.about-us-section-two .row.align-items-start {
+		gap: 4% !important;
+	}
+}
+
+/* Fleet/Portfolio - Download Ship Particulars button responsive for tablet/iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.pbmit-service-style-1 .pbmit-btn-outline .pbmit-button-text {
+		font-size: 12px !important;
+		white-space: normal !important;
+		line-height: 1.3 !important;
+	}
+	
+	.pbmit-service-style-1 .pbmit-btn-outline {
+		padding: 12px 15px !important;
+		min-height: 50px !important;
+		display: flex !important;
+		align-items: center !important;
+	}
+	
+	.pbmit-service-style-1 .pbmit-button-content-wrapper {
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		gap: 8px !important;
+		flex-wrap: wrap !important;
+	}
+	
+	.pbmit-service-style-1 .custom-btn-icon svg {
+		width: 18px !important;
+		height: 18px !important;
+		flex-shrink: 0 !important;
+	}
+}
+
+/* Footer Big Area responsive for tablet/iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.pbmit-footer-big-area .pbmit-footer-box {
+		padding: 30px 20px !important;
+	}
+	
+	.pbmit-footer-big-area .container-fluid {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+	
+	/* Icon wrapper - maintain perfect circle */
+	.pbmit-footer-big-area .pbmit-icon-wrapper {
+		min-width: 50px !important;
+		width: 50px !important;
+		height: 50px !important;
+		flex-shrink: 0 !important;
+	}
+	
+	/* Contact info items - stack vertically on smaller tablets */
+	.pbmit-footer-big-area .d-flex {
+		gap: 10px;
+	}
+	
+	/* Text sizes */
+	.pbmit-footer-big-area h6 {
+		font-size: 12px !important;
+	}
+	
+	.pbmit-footer-big-area a[href^="tel"],
+	.pbmit-footer-big-area a[href^="mailto"] {
+		font-size: 13px !important;
+		word-break: break-word;
+	}
+	
+	/* Contact button - move to bottom left */
+	.pbmit-footer-big-area .pbmit-btn {
+		padding: 12px 50px 12px 20px !important;
+		font-size: 14px !important;
+		white-space: nowrap;
+	}
+	
+	/* Arrow circle - make smaller for tablet */
+	.pbmit-footer-big-area .pbmit-btn .pbmit-button-text:before {
+		width: 35px !important;
+		height: 35px !important;
+		line-height: 35px !important;
+		font-size: 14px !important;
+		right: 3px !important;
+		top: 6px !important;
+	}
+	
+	/* Column adjustments for better fit */
+	.pbmit-footer-big-area .col-md-3 {
+		flex: 0 0 auto !important;
+		width: auto !important;
+		max-width: 48% !important;
+	}
+	
+	/* Contact button column - move below, align left */
+	.pbmit-footer-big-area .col-md-2 {
+		flex: 0 0 100% !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		margin-top: 20px;
+		text-align: left !important;
+	}
+	
+	.pbmit-footer-big-area .col-md-2.text-md-end {
+		text-align: left !important;
+	}
+}
+
+/* Extra adjustments for medium tablets */
+@media (min-width: 768px) and (max-width: 900px) {
+	.pbmit-footer-big-area .pbmit-footer-box {
+		padding: 25px 15px !important;
+	}
+	
+	.pbmit-footer-big-area .pbmit-icon-wrapper {
+		width: 45px !important;
+		height: 45px !important;
+		min-width: 45px !important;
+	}
+	
+	.pbmit-footer-big-area .pbmit-icon-wrapper svg {
+		width: 20px !important;
+		height: 20px !important;
+	}
+	
+	.pbmit-footer-big-area .col-md-4 {
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+		margin-bottom: 15px;
+	}
+	
+	.pbmit-footer-big-area .col-md-3 {
+		flex: 0 0 50% !important;
+		max-width: 50% !important;
+	}
+}
+
+/* FID section z-index lower than mobile menu */
+@media (max-width: 1199px) {
+	.custom-overlap-margin {
+		z-index: 1 !important;
+	}
+}
+
+/* About-us page - Lower z-index for mobile menu compatibility */
+@media (max-width: 1199px) {
+	/* Team photo section */
+	.team-photo-section {
+		z-index: 1 !important;
+	}
+	
+	/* Team photo spinner */
+	.team-photo-spinner {
+		z-index: 1 !important;
+	}
+	
+	/* Footer */
+	.site-footer {
+		z-index: 1 !important;
+	}
+	
+	/* Static box elements */
+	.pbmit-static-box-style-1,
+	.pbmit-staticbox-wrapper,
+	.pbmit-static-box-style-1 .pbmit-content-box,
+	.pbmit-static-box-style-1 h3,
+	.pbmit-static-box-style-1 a {
+		z-index: 1 !important;
+	}
+}
